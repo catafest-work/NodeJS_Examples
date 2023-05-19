@@ -14,6 +14,6 @@
 
 - this install node-aplay, see : 
 
-```npm install node-aplay``` 
+```npm install http``` 
 
 ```npm install icy```
