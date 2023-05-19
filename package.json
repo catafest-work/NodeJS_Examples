@@ -1,0 +1,27 @@
+{
+  "name": "nodejs_examples",
+  "version": "1.0.0",
+  "description": "examples with nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "working_files": "node working_files.js"
+  },
+  "keywords": [
+    "catafest",
+    "catafest-work",
+    "nodejs",
+    "javascript",
+    "examples",
+    "example"
+  ],
+  "author": "catafest,catafest-work",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "icy": "^2.1.0",
+    "node-aplay": "^1.0.3"
+  },
+  "type": "module"
+}
