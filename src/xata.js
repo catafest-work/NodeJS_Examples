@@ -7,7 +7,7 @@ const tables = [{ name: "test", columns: [] }];
 const DatabaseClient = buildClient();
 const defaultOptions = {
   databaseURL:
-    "https://Catalin-George-Festila-s-workspace-2hp50s.eu-west-1.xata.sh/db/catafest-work",
+    "https://Catalin-George-Festila-s-workspace-2hp50s.eu-west-1.xata.sh/db/catafest",
 };
 /** @typedef { import('./types').DatabaseSchema } DatabaseSchema */
 /** @extends DatabaseClient<DatabaseSchema> */

@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "working_files": "node working_files.js",
-    "radio": "node radio.js"
+    "radio": "node radio.js",
+    "testing_xata": "node testing_xata.js"
   },
   "keywords": [
     "catafest",
@@ -19,7 +20,9 @@
   "author": "catafest,catafest-work",
   "license": "ISC",
   "dependencies": {
+    "@xata.io/cli": "^0.12.0",
     "@xata.io/client": "^0.23.5",
+    "dotenv": "^16.0.3",
     "fs": "^0.0.1-security",
     "http": "^0.0.1-security",
     "icy": "^2.1.0",

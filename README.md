@@ -28,11 +28,19 @@
 
 ## testing_xata.js - simple example for testing xata 
 
-```npm install @xata.io/cli -g```
+ - this will work with XATA_API_KEY
+
+```npm install dotenv```
+
+ - these commands will create the project files
+
+```npm install @xata.io/cli```
 
 ```xata auth login```
 
 # Navigate to your project
+
+ - this is the default project named ```NodeJS_Examples```
 
 ```cd NodeJS_Examples```
 
@@ -72,3 +80,9 @@ i Next steps? Here's a list of useful commands below. Use xata --help to list th
 # Run pull to update your client, migrations and types
 
 ```xata pull```
+
+ - run the project with the following command :
+
+```node testing_xata.js``` or run with the npm from ```package.json``` like this: ```npm run testing_xata```
+
+
