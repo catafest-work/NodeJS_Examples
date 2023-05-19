@@ -4,16 +4,20 @@
 
 ## working_files.js - simple javascript code source with few features for files in NodeJS
 
- - ths install fs , see : https://www.npmjs.com/package/fs
+ - ths install [fs](https://www.npmjs.com/package/fs)
+
 ```npm i fs```
 
- - this install http , see : https://www.npmjs.com/package/http
+ - this install [http](https://www.npmjs.com/package/http)
+
 ```npm i http```
 
 ## radio.js - simple radio server for play playlists
 
-- this install node-aplay, see : 
+ - this install [http](https://www.npmjs.com/package/http)
 
 ```npm install http``` 
+
+ - this install [icy](https://www.npmjs.com/package/icy)
 
 ```npm install icy```
