@@ -1,0 +1,8 @@
+{
+  "databaseURL": "https://Catalin-George-Festila-s-workspace-2hp50s.eu-west-1.xata.sh/db/catafest-work",
+  "codegen": {
+    "output": "src/xata.js",
+    "moduleType": "esm",
+    "declarations": true
+  }
+}
