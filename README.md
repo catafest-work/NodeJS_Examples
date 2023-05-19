@@ -38,13 +38,13 @@
 
 ```xata auth login```
 
-# Navigate to your project
+### Navigate to your project
 
  - this is the default project named ```NodeJS_Examples```
 
 ```cd NodeJS_Examples```
 
-# Initialize your project locally with the Xata CLI
+### Initialize your project locally with the Xata CLI
 
 ```xata init --db https://Catalin-George-Festila-s-workspace-2hp50s.eu-west-1.xata.sh/db/catafest-work```
  
@@ -77,7 +77,7 @@ i Next steps? Here's a list of useful commands below. Use xata --help to list th
 ✔ You are all set!
 ```
 
-# Run pull to update your client, migrations and types
+### Run pull to update your client, migrations and types
 
 ```xata pull```
 
