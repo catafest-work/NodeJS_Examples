@@ -24,7 +24,7 @@ import appendFile from 'fs/promises';
 
 async function appendToFile() {
   const filePath = "appendFile_test_file.txt";
-  const content = 'This is a test file for NodeJS with FS module and appendToFile ';
+  const content = 'This is a test file for NodeJS with FS module and appendToFile';
   
   try {
     await fs.promises.appendFile(filePath, content);
@@ -68,3 +68,34 @@ async function delete_unlinkToFile() {
 
 // run this async function 
 delete_unlinkToFile();
+
+// createWriteStream for write a readable stream to file
+const file = fs.createWriteStream('createWriteStream_test_file.txt');
+file.write('This is a test file for NodeJS with FS module and createWriteStream');
+
+// createReadStream for reading a readable stream from file
+async function createReadStreamToFile() {
+  //empty data stream variable will be fill with the contents from the file
+  var data = '';
+  try {
+    var readerStream = fs.createReadStream('writeFile_test_file.txt');
+    readerStream.setEncoding('UTF8'); // Set the encoding to be utf8. 
+
+    // Handle stream events --> data, end, and error
+    readerStream.on('data', function(chunk) {
+      data += chunk;
+    });
+
+    readerStream.on('end',function() {
+      console.log(data);
+    });
+
+    readerStream.on('error', function(err) {
+      console.log(err.stack);
+    });
+  } catch (error) {
+    console.error('Error appending content to file:', error);
+  }
+}
+
+createReadStreamToFile();
