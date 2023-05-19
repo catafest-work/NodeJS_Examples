@@ -1,8 +1,8 @@
-## initalization of the project 
+# initalization of the project 
 
 - create a new project and set in ```package.json``` this : ```"type": "module"``` to use ```import`` NodeJS modules.
 
-## working_files.js - simple javascript code source with few features for files in NodeJS
+# working_files.js - simple javascript code source with few features for files in NodeJS
 
  - ths install [fs](https://www.npmjs.com/package/fs)
 
@@ -12,7 +12,7 @@
 
 ```npm i http```
 
-## radio.js - simple radio server for play playlists
+# radio.js - simple radio server for play playlists
 
   This server will run in a blocking mode because it relies on the listen method to ```listen``` on the specified port. 
   This means that the server will block program execution and not respond to other requests or events while listening on that port.
@@ -26,7 +26,7 @@
 
 ```npm install icy```
 
-## testing_xata.js - simple example for testing xata 
+# testing_xata.js - simple example for testing xata 
 
  - this will work with XATA_API_KEY
 
