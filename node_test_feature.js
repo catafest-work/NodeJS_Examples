@@ -1,3 +1,4 @@
+// this will not work in some versions of NodeJS that don't support node:test 
 import test from 'node:test';
 
 test('Example test', t => {
