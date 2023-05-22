@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contor Vizite</title>
+</head>
+<body>
+  <h1>Contor vizite online cu cookie</h1>
+  <p id="visitCount">Numărul de vizite online: </p>
+
+  <script>
+    // Funcția pentru a seta sau a actualiza cookie-ul
+    function setVisitCookie() {
+      // Verificăm dacă există deja un cookie pentru vizite
+      if (document.cookie.indexOf('visitCount=') === -1) {
+        // Dacă nu există, setăm un cookie nou cu valoarea 1
+        document.cookie = 'visitCount=1; expires=Thu, 31 Dec 2025 23:59:59 UTC; path=/';
+      } else {
+        // Dacă există deja un cookie, extragem valoarea și o incrementăm
+        var visitCount = parseInt(getCookie('visitCount'));
+        visitCount++;
+        document.cookie = 'visitCount=' + visitCount + '; expires=Thu, 31 Dec 2025 23:59:59 UTC; path=/';
+      }
+    }
+
+    // Funcția pentru a obține valoarea unui cookie
+    function getCookie(cookieName) {
+      var name = cookieName + '=';
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var cookieArray = decodedCookie.split(';');
+      for (var i = 0; i < cookieArray.length; i++) {
+        var cookie = cookieArray[i];
+        while (cookie.charAt(0) === ' ') {
+          cookie = cookie.substring(1);
+        }
+        if (cookie.indexOf(name) === 0) {
+          return cookie.substring(name.length, cookie.length);
+        }
+      }
+      return '';
+    }
+
+    // Apelăm funcția pentru a seta sau a actualiza cookie-ul la fiecare vizită
+    setVisitCookie();
+
+    // Obținem numărul de vizite din cookie și îl afișăm în tagul HTML corespunzător
+    var visitCount = getCookie('visitCount');
+    var visitCountTag = document.getElementById('visitCount');
+    visitCountTag.innerHTML += visitCount;
+  </script>
+</body>
+</html>
